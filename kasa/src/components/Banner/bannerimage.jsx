@@ -2,8 +2,9 @@ export function BannerImage() {
 	return (
 		<div className="divLogo">
 			<img
-				src=""
-				alt="Logo de la société Kasa"
+				className="logoAvif"
+				src="/resources/kasa.avif"
+				alt="logo de la société Kasa"
 			></img>
 		</div>
 	);

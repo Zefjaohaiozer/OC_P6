@@ -1,24 +1,35 @@
 .header {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	width: 100%;
 	align-items: center;
-	align-content: space-evenly;
+	justify-content: space-between;
+	position: relative;
 }
-.divLogo,
 .nav {
 	display: flex;
 	align-items: center;
 	align-content: space-between;
-	min-width: 300px;
 }
 .nav ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	width: 100%;
 	padding: 0px;
 }
 .nav ul li {
-	margin: auto;
+	margin: 15px;
+}
+.nav a {
+	text-decoration: none;
+	color: #ff6060;
+}
+.nav a:hover {
+	text-decoration: underline;
+}
+.logoAvif {
+	width: 200px;
+	height: 100px;
 }
