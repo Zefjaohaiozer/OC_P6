@@ -1,0 +1,23 @@
+footer {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.footerImg {
+	width: 200px;
+}
+.footerText {
+	color: white;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 142.6%;
+}

@@ -4,6 +4,8 @@ import { Location } from './components/locationpage';
 import Home from './components/home';
 import { NotFound } from './components/notfound';
 import { Banner } from './components/banner';
+import { Footer } from './components/footer';
+
 export default function App() {
 	return (
 		<div className="app">
@@ -26,6 +28,7 @@ export default function App() {
 					element={<NotFound />}
 				/>
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

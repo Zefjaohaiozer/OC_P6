@@ -1,0 +1,30 @@
+.bgImg {
+	margin-top: 20px;
+	padding: 0px;
+	position: relative;
+	text-align: center;
+	color: white;
+	height: fit-content;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 25px;
+}
+.bgImg img {
+	width: 100%;
+	object-fit: cover;
+	height: 250px;
+	mix-blend-mode: darken;
+	border-radius: 25px;
+}
+.h1 {
+	margin: 0px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 142.6%;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

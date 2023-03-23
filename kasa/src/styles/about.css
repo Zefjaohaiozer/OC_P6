@@ -1,0 +1,40 @@
+.collapsibleDiv {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+}
+
+.aboutTitle {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 142.6%;
+}
+.aboutBtn {
+	background-color: #ff6060;
+	border-radius: 5px;
+	width: 100%;
+
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.aboutBtn:hover {
+	cursor: pointer;
+}
+
+.aboutContent {
+	color: #ff6060;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 142.6%;
+	padding: 15px;
+}

@@ -1,11 +1,15 @@
+import logoKasa from '../../resources/kasa.png';
+
 export function BannerImage() {
 	return (
 		<div className="divLogo">
-			<img
-				className="logoAvif"
-				src="/resources/kasa.avif"
-				alt="logo de la société Kasa"
-			></img>
+			<a href="/">
+				<img
+					className="logoAvif"
+					src={logoKasa}
+					alt="logo de la société Kasa"
+				/>
+			</a>
 		</div>
 	);
 }
