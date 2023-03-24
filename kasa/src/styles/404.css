@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	justify-content: center;
 	color: #ff6060;
 	margin-bottom: 30px;
 }
@@ -21,7 +21,8 @@
 	font-weight: 500;
 	font-size: 36px;
 	line-height: 142.6%;
-	margin-bottom: 250px;
+	margin-bottom: 15vh;
+	text-align: center;
 }
 
 .link404 {
@@ -33,4 +34,18 @@
 	color: #ff6060;
 
 	text-decoration-line: underline;
+}
+@media screen and (max-width: 720px) {
+	.title404 {
+		font-size: 96px;
+	}
+	.content404 {
+		font-size: 18px;
+	}
+
+	.link404 {
+		font-size: 14px;
+
+		text-decoration-line: underline;
+	}
 }

@@ -8,7 +8,10 @@ export function BackgroundImg() {
 				src={backgroundImg}
 				alt="l'océan s'abat sur les falaises"
 			/>
-			<h1 className="h1 title">Chez vous, partout et ailleurs</h1>
+			<h1 className="h1 title">
+				Chez vous,
+				<br className="returnMobile" /> partout et ailleurs
+			</h1>
 		</div>
 	);
 }

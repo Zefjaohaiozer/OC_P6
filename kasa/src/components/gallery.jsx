@@ -3,7 +3,7 @@ import { LocationPreview } from './locationpreview';
 export function Gallery() {
 	return (
 		<div className="gallery">
-			<LocationPreview />;
+			<LocationPreview />
 		</div>
 	);
 }

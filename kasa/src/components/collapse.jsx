@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import aboutList from '../data/about.json';
 
-function AboutCollapse(i) {
+export function Collapse(i, j, k) {
 	const [open, setOpen] = useState(false);
 
 	let classFa;
@@ -12,22 +11,18 @@ function AboutCollapse(i) {
 	}
 	return (
 		<div
-			key={i.id}
-			className="collapsibleDiv"
+			key={k}
+			className={`collapsibleDiv collapse${i}`}
 		>
 			<button
-				className="aboutBtn"
+				className="collapseBtn"
 				onClick={() => setOpen(!open)}
 			>
-				<h2 className="h2 aboutTitle">{i.title}</h2>
+				<h2 className="h2 collapseTitle">{i}</h2>
 				<i className={classFa}></i>
 			</button>
 
-			{open && <div className="aboutContent">{i.content}</div>}
+			{open && <div className="collapseContent">{j}</div>}
 		</div>
 	);
-}
-
-export function AboutCreateContent() {
-	return aboutList.map((about, index) => AboutCollapse(about));
 }

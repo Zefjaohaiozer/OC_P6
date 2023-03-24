@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { About } from './components/apropos';
-import { Location } from './components/locationpage';
+import { CheckUrl } from './components/locationpage';
 import Home from './components/home';
 import { NotFound } from './components/notfound';
 import { Banner } from './components/banner';
@@ -21,7 +21,7 @@ export default function App() {
 				/>
 				<Route
 					path="/location/:id"
-					element={<Location />}
+					element={<CheckUrl />}
 				/>
 				<Route
 					path="/*"
