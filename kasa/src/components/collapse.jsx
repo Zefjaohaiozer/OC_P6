@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Fade } from 'react-reveal';
 export function Collapse(i, j, k) {
 	const [open, setOpen] = useState(false);
 
@@ -22,7 +22,12 @@ export function Collapse(i, j, k) {
 				<i className={classFa}></i>
 			</button>
 
-			{open && <div className="collapseContent">{j}</div>}
+			<Fade
+				collapse
+				when={open}
+			>
+				<div className="collapseContent">{j}</div>
+			</Fade>
 		</div>
 	);
 }

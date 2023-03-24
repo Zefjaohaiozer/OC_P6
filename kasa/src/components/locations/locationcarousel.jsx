@@ -26,10 +26,16 @@ function CreateCarousel() {
 
 	return (
 		<React.Fragment>
-			{locationElement.pictures.map((picture, index) =>
-				CreateOneDiv(picture, index)
-			)}
+			<div
+				className="carouselImgDiv"
+				style={{ transform: `translateX(-${showImageIndex * 100}%)` }}
+			>
+				{locationElement.pictures.map((picture, index) =>
+					CreateOneDiv(picture, index)
+				)}
+			</div>
 			{LengthCheck(locationElement.pictures)}
+			{PictureCount(showImageIndex + 1, locationElement.pictures.length)}
 		</React.Fragment>
 	);
 }
@@ -38,20 +44,16 @@ function CreateOneDiv(i, n) {
 	const isActive = n === showImageIndex;
 
 	return (
-		<div
-			className={`imgCarouselDiv${n} carouselImgDiv ${
-				isActive ? 'active' : ''
-			}`}
-			key={`divImgKey${i}`}
-		>
+		<React.Fragment key={`divImgKey${i}`}>
 			<img
+				className={`imgCarouselDiv${n}  carouselImg ${
+					isActive ? 'active' : ''
+				}`}
 				src={i}
 				alt={i}
 				id={`imgCarouselNb${n}`}
-				className="carouselImg"
 			></img>
-			{PictureCount(n + 1, locationElement.pictures.length)}
-		</div>
+		</React.Fragment>
 	);
 }
 function LengthCheck(i) {

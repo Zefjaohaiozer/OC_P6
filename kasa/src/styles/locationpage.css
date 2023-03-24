@@ -15,6 +15,7 @@
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 30px;
 }
+
 .pictureCount {
 	position: absolute;
 	bottom: 5%;
@@ -27,20 +28,18 @@
 	color: white;
 }
 .carouselImgDiv {
-	object-fit: cover;
-	object-position: center;
-	min-width: 100%;
-	width: 100%;
-	display: none;
-	object-fit: contain;
-}
-.active {
 	display: flex;
+	width: 100%;
+	min-width: 100%;
+	transition: transform 1s ease-in-out;
+	flex-wrap: nowrap;
 }
 .carouselImg {
 	object-fit: cover;
 	object-position: center;
+	width: 100%;
 	min-width: 100%;
+	height: auto;
 	border-radius: 25px;
 	mix-blend-mode: darken;
 }
@@ -225,6 +224,7 @@
 	width: 30px;
 	height: 30px;
 }
+
 @media screen and (max-width: 720px) {
 	.locationPage {
 		min-height: 0vh;
@@ -235,7 +235,6 @@
 		margin: auto;
 		margin-top: 10px;
 		margin-bottom: 10px;
-
 		border-radius: 10px;
 	}
 	.pictureCount {
