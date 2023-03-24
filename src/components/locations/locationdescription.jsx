@@ -37,7 +37,7 @@ function CreateAuthorDiv() {
 
 	return (
 		<div className="locationAuthorNamePic">
-			<h1 className="locationAuthorNameTitle">{locationAuthorName}</h1>
+			<p className="locationAuthorNameTitle">{locationAuthorName}</p>
 			<img
 				className="locationAuthorPic"
 				src={locationAuthorPic}
@@ -86,7 +86,7 @@ function CreateTagDiv() {
 	const tagList = locationElement.tags.map((tag, index) =>
 		CreateTag(tag, index)
 	);
-	return <div className="tagsDiv">{tagList}</div>;
+	return <div className="tagsDivParent">{tagList}</div>;
 }
 
 function CreateTag(i, j) {
