@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OC_P6/static/css/main.47e07848.css",
+    "main.js": "/OC_P6/static/js/main.f26ca1f6.js",
+    "static/media/montagnes.jpg": "/OC_P6/static/media/montagnes.e54ae93d36cfba861b65.jpg",
+    "static/media/background.jpg": "/OC_P6/static/media/background.61352a7ae7ebff30e925.jpg",
+    "index.html": "/OC_P6/index.html",
+    "main.47e07848.css.map": "/OC_P6/static/css/main.47e07848.css.map",
+    "main.f26ca1f6.js.map": "/OC_P6/static/js/main.f26ca1f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47e07848.css",
+    "static/js/main.f26ca1f6.js"
+  ]
+}
