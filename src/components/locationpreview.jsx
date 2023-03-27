@@ -5,11 +5,11 @@ import { Slide } from 'react-reveal';
 
 export function LocationPreview() {
 	return logements.map((logement, index) => (
-		<Slide left>
-			<div
-				key={logement.id}
-				className="locationPreviewDiv"
-			>
+		<Slide
+			left
+			key={logement.id}
+		>
+			<div className="locationPreviewDiv">
 				<a href={`/location/id=${logement.id}`}>
 					<img
 						src={logement.cover}
