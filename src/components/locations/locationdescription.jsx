@@ -1,17 +1,12 @@
 import React from 'react';
 import { Collapse } from '../collapse';
-import { useLocation } from 'react-router-dom';
-import locationList from '../../data/logements.json';
 
+import locationList from '../../data/logements.json';
+import { FindLocation } from './findLocationId';
 let locationElement;
 
 export function LocationDescription() {
-	const location = useLocation();
-	const locationPath = location.pathname;
-	const locationID = locationPath.replace('/location/id=', '');
-	locationElement = locationList.find((obj) => {
-		return obj.id === locationID;
-	});
+	locationElement = FindLocation(locationElement, locationList);
 
 	return (
 		<section className="locationDetailsDiv">

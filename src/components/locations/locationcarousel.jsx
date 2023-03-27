@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import locationList from '../../data/logements.json';
 
+import locationList from '../../data/logements.json';
+import { FindLocation } from './findLocationId';
 let locationElement = [];
 let showImageIndex;
 let setShowImageIndex;
@@ -17,12 +17,7 @@ export function Carousel() {
 }
 
 function CreateCarousel() {
-	const location = useLocation();
-	const locationPath = location.pathname;
-	const locationID = locationPath.replace('/location/id=', '');
-	locationElement = locationList.find((obj) => {
-		return obj.id === locationID;
-	});
+	locationElement = FindLocation(locationElement, locationList);
 
 	return (
 		<React.Fragment>
@@ -31,7 +26,7 @@ function CreateCarousel() {
 				style={{ transform: `translateX(-${showImageIndex * 100}%)` }}
 			>
 				{locationElement.pictures.map((picture, index) =>
-					CreateOneDiv(picture, index)
+					CreateCarouselImg(picture, index)
 				)}
 			</div>
 			{LengthCheck(locationElement.pictures)}
@@ -40,7 +35,7 @@ function CreateCarousel() {
 	);
 }
 
-function CreateOneDiv(i, n) {
+function CreateCarouselImg(i, n) {
 	const isActive = n === showImageIndex;
 
 	return (
@@ -57,7 +52,6 @@ function CreateOneDiv(i, n) {
 	);
 }
 function LengthCheck(i) {
-	console.log(i);
 	return (
 		<React.Fragment>
 			{i.length > 1 ? <CreateNavArrows set={setShowImageIndex} /> : null},
@@ -66,8 +60,6 @@ function LengthCheck(i) {
 }
 
 function CreateNavArrows() {
-	console.log('je crée des flèches de navigation');
-
 	const PreviousImage = () => {
 		showImageIndex > 0
 			? setShowImageIndex((showImageIndex) =>
