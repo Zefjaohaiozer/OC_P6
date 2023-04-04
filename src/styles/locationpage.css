@@ -96,6 +96,9 @@
 .collapseEquipements {
 	width: 45%;
 }
+.collapseBtn {
+	border-style: none;
+}
 .collapseDescription h2,
 .collapseEquipements h2 {
 	font-family: 'Montserrat';
@@ -115,6 +118,7 @@
 	justify-content: space-between;
 	padding-left: 15px;
 	padding-right: 15px;
+	border-style: none;
 }
 
 .collapseDescription p,
